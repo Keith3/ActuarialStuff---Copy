@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ActuarialLib", "ActuarialLib\ActuarialLib.vbproj", "{E3BA75EB-8C36-47A5-86C9-7B3751099592}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ActuarialStuff", "ActuarialStuffMain\ActuarialStuff.vbproj", "{DBB06164-D5EC-46A7-95DF-8DE1B359322E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3BA75EB-8C36-47A5-86C9-7B3751099592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3BA75EB-8C36-47A5-86C9-7B3751099592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3BA75EB-8C36-47A5-86C9-7B3751099592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3BA75EB-8C36-47A5-86C9-7B3751099592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB06164-D5EC-46A7-95DF-8DE1B359322E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB06164-D5EC-46A7-95DF-8DE1B359322E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB06164-D5EC-46A7-95DF-8DE1B359322E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB06164-D5EC-46A7-95DF-8DE1B359322E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A99C6107-F002-46A5-A4C6-ADEC07830EDB}
+	EndGlobalSection
+EndGlobal

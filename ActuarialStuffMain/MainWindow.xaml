@@ -1,0 +1,93 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ActuarialStuff"
+        x:Name="MainWindow1"
+        Title="Actuarial Stuff"
+        Closing="Window_Closing"
+        mc:Ignorable="d"
+        d:DesignHeight="200"
+        d:DesignWidth="500">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="156*"/>
+            <ColumnDefinition Width="320*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="18"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu x:Name="menu" Grid.Row="0" Grid.ColumnSpan="3">
+
+            <MenuItem Header="File">
+                
+                <MenuItem x:Name="mnuFileLoadSoaTables"
+                          Header="Add SOA Tables"
+                          HorizontalAlignment="Left"/>
+                
+                <MenuItem x:Name="mnuFileClearAllTables"
+                          Header="Clear All Tables"
+                          HorizontalAlignment="Left"/>
+                
+                <MenuItem x:Name="mnuFileCloseActuarialStuff"
+                          Header="Exit Actuarial Stuff"
+                          HorizontalAlignment="Left"/>
+            </MenuItem>
+
+            <MenuItem Header="Tables">
+                <MenuItem x:Name="mnuTableView"
+                          Header="View"
+                          IsEnabled="True"/>
+                
+                <MenuItem x:Name="mnuTableCompare"
+                          Header="Compare"
+                          IsEnabled="False"/>
+                
+                <MenuItem x:Name="mnuTableFilter"
+                          Header="Filter"
+                          IsEnabled="False"/>
+                
+                <MenuItem x:Name="mnuTableSortByName"
+                          Header="Sort By Name"/>
+                
+                <MenuItem x:Name="mnuTableSortByID"
+                          Header="Sort By ID"/>
+            </MenuItem>
+
+            <MenuItem Header="Help">
+                <MenuItem x:Name="mnuHelpContents"
+                          Header="Contents..."/>
+                
+                <MenuItem x:Name="mnuHelpAbout"
+                          Header="About..."/>
+                
+            </MenuItem>
+
+        </Menu>
+
+        <local:SoaTableSelectorViewer x:Name="SoaTableSelectorViewer1"
+                                      Grid.Row="1"
+                                      Grid.ColumnSpan="3"
+                                      Width="Auto"
+                                      Height="Auto"/>
+        
+        <local:SoaTableSelectorComparer x:Name="SoaTableSelectorComparer1"
+                                        Grid.Row="1"
+                                        Grid.ColumnSpan="3"
+                                        Width="Auto"
+                                        Height="Auto"
+                                        Visibility="Hidden"/>
+        
+        <local:SoaTableFilter x:Name="SoaTableFilter1"
+                              Grid.Row="1"
+                              Grid.ColumnSpan="3"
+                              Width="Auto"
+                              Height="Auto"
+                              Visibility="Hidden"/>
+    </Grid>
+</Window>

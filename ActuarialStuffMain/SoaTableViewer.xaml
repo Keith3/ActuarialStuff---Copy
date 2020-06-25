@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="SoaTableViewer" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+             VerticalAlignment="Top"
+             FontFamily="Courier New"
+             mc:Ignorable="d" 
+             d:DesignHeight="150"
+             d:DesignWidth="380">
+    <Grid>
+        <TabControl x:Name="tabControlView">
+            
+            <TabItem x:Name="tabItemDescription"
+                     Header="Description">
+                
+                <TextBox x:Name="textBoxDescription"
+                         TextWrapping="Wrap"
+                         VerticalScrollBarVisibility="Auto"/>
+            </TabItem>
+            
+            <TabItem x:Name="tabItemStructure"
+                     Header="Structure">
+                
+                <TextBox x:Name="textBoxStructure"
+                         HorizontalScrollBarVisibility="Auto"
+                         VerticalScrollBarVisibility="Auto"/>
+            </TabItem>
+            
+            <TabItem x:Name="tabItemValues"
+                     Header="Values">
+
+                    <TextBox x:Name="textBoxValues"
+                             HorizontalScrollBarVisibility="Auto"
+                             VerticalScrollBarVisibility="Auto"/>
+                    
+            </TabItem>
+            
+            <TabItem x:Name="tabItemXML"
+                     Header="XML">
+                
+                <syncfusion:EditControl x:Name="ecXML"
+                                        DocumentLanguage="XML"
+                                        EnableOutlining="True"
+                                        Background="White"
+                                        Foreground="Black"/>
+            </TabItem>
+            
+            <TabItem x:Name="tabItemWarnings"
+                     Header="Warnings">
+                
+                <TextBox x:Name="textBoxWarnings"
+                         HorizontalScrollBarVisibility="Auto"
+                         VerticalScrollBarVisibility="Auto"/>
+            </TabItem>
+            
+        </TabControl>
+    </Grid>
+</UserControl>

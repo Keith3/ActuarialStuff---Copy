@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="SoaTableComparer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ActuarialStuff"
+             mc:Ignorable="d"
+             d:DesignWidth="300"
+             d:DesignHeight="150">
+    
+    <Grid>
+        <TabControl x:Name="tabControl">
+            
+            <TabItem x:Name="tabItemDescription"
+                     Header="Description">
+                
+                <local:TextBoxComparer x:Name="textBoxesDescription"
+                                       Width="Auto"
+                                       Height="Auto"/>
+            </TabItem>
+            
+            <TabItem x:Name="tabItemStructure"
+                     Header="Structure">
+                
+                <local:TextBoxComparer x:Name="textBoxesStructure"
+                                       Width="Auto"
+                                       Height="Auto"
+                                       Wrapping="NoWrap"/>
+            </TabItem>
+
+            <TabItem x:Name="tabItemValuesText"
+                     Header="Values">
+                
+                <local:TextBoxComparer x:Name="textBoxesValues"
+                                       Width="Auto"
+                                       Height="Auto"
+                                       Wrapping="NoWrap"/>
+            </TabItem>
+
+        </TabControl>
+    </Grid>
+</UserControl>
